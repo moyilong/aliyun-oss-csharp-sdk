@@ -39,16 +39,8 @@ namespace Aliyun.OSS.Common.Communication
         
         public static ServiceClient Create(ClientConfiguration configuration)
         {
-#if NETCOREAPP2_0
-            //return new ServiceClientImpl(configuration);
-            if (configuration.UseNewServiceClient)
-            {
-                return new ServiceClientNewImpl(configuration);
-            }
-            else
-            {
-                return new ServiceClientImpl(configuration);
-            }
+#if NETFRAMEWORK
+            return new ServiceClientImpl(configuration);
 #else
             return new ServiceClientImpl(configuration);
 #endif
