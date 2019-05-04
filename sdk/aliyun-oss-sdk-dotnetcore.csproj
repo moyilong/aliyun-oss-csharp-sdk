@@ -10,7 +10,8 @@
     <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
     <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
     <TargetFrameworks>net452;netcoreapp2.1;netstandard2.0</TargetFrameworks>
-    <AssemblyName>Aliyun.OSS.Core</AssemblyName>
+    <AssemblyName>Aliyun.OSS.MultiPlatform</AssemblyName>
+    <AutoGen>true</AutoGen>
   </PropertyGroup>
  <PropertyGroup>
     <AssemblyOriginatorKeyFile>aliyun_sdk_net.snk</AssemblyOriginatorKeyFile>
